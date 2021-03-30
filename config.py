@@ -1,8 +1,6 @@
-from app import environ, path, load_dotenv
-import sys
-import jinja2
+import os
 
-basedir = path.abspath(path.dirname(__file__))
-load_dotenv(path.join(basedir, '.env'))
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 
