@@ -11,3 +11,5 @@ Este é um repositório criado para estudo de programação linear. O projeto te
 4. execute `venv/bin/pip3 install -r requirements.txt` para atualizar as dependências
 5. configure o .env de acordo
 6. execute `flask run` para iniciar o servidor na porta default 5000, se ela estiver sendo usada por um processo importante você pode executar `flask run -p :port` para especificar a porta
+
+(OCASIONAL) execute `venv/bin/pip3 freeze > requirements.txt` se adicionar uma nova dependência ao projeto

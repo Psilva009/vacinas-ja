@@ -2,40 +2,36 @@
 {% block title %}Vacinas Já - Calculadora{% endblock %}
 {% block links %}  {% endblock %}
 {% block content %}
-
-    {{ form }}
     <form action="" method="POST"></form>
         <div class="form-group">
             <label >Capacidade do Automóvel:</label>
-            <input type="text" name="capacity" id="">
+            {{ form.capacity }}
         </div>
-    </form>
-    <!-- 
         <div class="form-group">
             <label>Número de Postos:</label>
-            <input type="text" name="numberPosts" value="5">
+            {{ form.numberPosts }}
         </div>
         <div class="form-group">
             <label >Requisição 1:</label>
-            <input type="text" name="req1">
+            {{ form.req1 }}
         </div>
         <div class="form-group">
             <label >Requisição 2:</label>
-            <input type="text" name="req2">
+            {{ form.req2 }}
         </div>
         <div class="form-group">
             <label >Requisição 3:</label>
-            <input type="text" name="req3">
+            {{ form.req3 }}
         </div>
         <div class="form-group">
             <label >Requisição 4:</label>
-            <input type="text" name="req4">
+            {{ form.req4 }}
         </div>
         <div class="form-group">
             <label >Requisição 5:</label>
-            <input type="text" name="req5">
+            {{ form.req5 }}
         </div>
         <input type="submit">
-     -->
+    </form>
 {% block scripts %}  {% endblock %}
 {% endblock %}
