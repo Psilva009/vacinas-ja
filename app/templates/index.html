@@ -2,36 +2,41 @@
 {% block title %}Vacinas Já - Calculadora{% endblock %}
 {% block links %}  {% endblock %}
 {% block content %}
-    <form action="" method="POST"></form>
-        <div class="form-group">
-            <label >Capacidade do Automóvel:</label>
-            {{ form.capacity }}
-        </div>
-        <div class="form-group">
-            <label>Número de Postos:</label>
-            {{ form.numberPosts }}
-        </div>
-        <div class="form-group">
-            <label >Requisição 1:</label>
-            {{ form.req1 }}
-        </div>
-        <div class="form-group">
-            <label >Requisição 2:</label>
-            {{ form.req2 }}
-        </div>
-        <div class="form-group">
-            <label >Requisição 3:</label>
-            {{ form.req3 }}
-        </div>
-        <div class="form-group">
-            <label >Requisição 4:</label>
-            {{ form.req4 }}
-        </div>
-        <div class="form-group">
-            <label >Requisição 5:</label>
-            {{ form.req5 }}
-        </div>
-        <input type="submit">
-    </form>
+<div class="container d-flex justify-content-center">
+    <div class="form-container">
+        <form action="" method="POST">
+            {{ form.csrf_token }}
+            <div class="form-group">
+                <label >Capacidade do Automóvel:</label>
+                {{ form.capacity(class="form-control") }}
+            </div>
+            <div class="form-group">
+                <label>Número de Postos:</label>
+                {{ form.numberPosts(class="form-control") }}
+            </div>
+            <div class="form-group">
+                <label >Requisição 1:</label>
+                {{ form.req1(class="form-control") }}
+            </div>
+            <div class="form-group">
+                <label >Requisição 2:</label>
+                {{ form.req2(class="form-control") }}
+            </div>
+            <div class="form-group">
+                <label >Requisição 3:</label>
+                {{ form.req3(class="form-control") }}
+            </div>
+            <div class="form-group">
+                <label >Requisição 4:</label>
+                {{ form.req4(class="form-control") }}
+            </div>
+            <div class="form-group">
+                <label >Requisição 5:</label>
+                {{ form.req5(class="form-control") }}
+            </div>
+            <input class="btn btn-primary" type="submit">
+        </form>
+    </div>
+</div>
 {% block scripts %}  {% endblock %}
 {% endblock %}
